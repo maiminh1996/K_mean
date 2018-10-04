@@ -18,10 +18,10 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 6. Clustering based on Deep Learning
 
 
-## Theoretical
+## Theoretical:
 
 
-## Implementation 
+## Implementation: 
 
 
 ![Algorithm](https://i.imgur.com/5h4VGl8.png)
