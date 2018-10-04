@@ -5,6 +5,7 @@
 |--------------|-----|-----|-----|------|
 | ![Imgur](https://i.imgur.com/zG7hawH.jpg) | ![Imgur](https://i.imgur.com/8jFRGV2.png) | ![Imgur](https://i.imgur.com/3KNUODd.png) | ![Imgur](https://i.imgur.com/38XGZfJ.png) | ![Imgur](https://i.imgur.com/C5zEC5s.png) |
 
+
 ## Clustering Algorithms - Unsupervised learning
 1. Clustering based on Centroid-based algorithms (K-mean)
 2. Clustering based on Density-based algorithms
