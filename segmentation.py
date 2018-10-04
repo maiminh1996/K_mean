@@ -5,7 +5,7 @@ from PIL import Image
 
 class K_mean():
 
-    def __init__(self, image, k, epsilon=1, iteration=100):
+    def __init__(self, image, k, epsilon=1, iteration=10):
         """
         initialisation
         :param k: number of centroids
@@ -47,31 +47,36 @@ class K_mean():
         """
         dem = 0
         dist_min = 10000 # self.distance(point, centroids[0])
-        # print(centroids)
         for count, i in enumerate(range(self.k)):
             distance = self.distance(pixel, centroids[i])
-            #print("KC", distance)
-            # print(count)
             if dist_min >= distance:
                 dist_min = distance
                 dem = count+1
-
         return dem
 
     def classe_image(self, centroids):
+        """
+
+        :param centroids:
+        :return:
+        """
         classe = np.zeros(shape=self.shape_image[0:2])
         for i in range(self.shape_image[0]):
             for j in range(self.shape_image[1]):
                 classe[i, j] = self.classement(self.img[i, j], centroids)
-
         return classe
 
     def classTocentroid(self, centroids, classe):
+        """
+
+        :param centroids:
+        :param classe:
+        :return:
+        """
         for i in range(self.shape_image[0]):
             for j in range(self.shape_image[1]):
                 g = int(classe[i,j]-1)
                 self.img[i, j] = centroids[g]
-
         return self.img
 
     def update_centroids(self, classe):
@@ -102,21 +107,16 @@ class K_mean():
                     z += self.img[a, b, 2]
 
             k = np.array([[int(x / (count+0.00001)), int(y / (count+0.00001)), int(z / (count+0.00001))]])
-
-            #print(index)  # [[0 1 1 0]
-                           # [0 0 0 1]]
             centroids = np.concatenate((centroids, k), axis=0)
             index = np.zeros_like(classe)
         centroids = centroids[1:]
         print("The new centroids is: \n", centroids)
         return centroids
 
-    def chay(self):
-        result = None
+    def output(self):
         centroids = self.random_k_centroid()
-        for i in range(10):
-            print("hihi %d", i)
-            # print("vong lap 1")
+        for i in range(self.itera):
+            print("Iteration ", i)
             a = self.classe_image(centroids)
             centroids = self.update_centroids(a)
 
@@ -133,14 +133,13 @@ class K_mean():
         erreur = 0
         for i in range(self.k):
             erreur += self.distance(centroids[i], new_centroids[i])
-
         return erreur
 
 
 if __name__=='__main__':
     img = Image.open("tuan.jpg")
     img = np.array(img)
-    centroids, image = K_mean(img, 6).chay()
+    centroids, image = K_mean(img, 6).output()
     a = Image.fromarray(image)
     a.save("tuan.png")
 
