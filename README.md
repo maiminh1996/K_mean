@@ -23,4 +23,4 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 
 ## Implementation
 
-![Algorithm]([Imgur](https://i.imgur.com/5h4VGl8.png))
+![Algorithm](https://i.imgur.com/5h4VGl8.png)
