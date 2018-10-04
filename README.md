@@ -21,7 +21,7 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 ## Theoretical:
 
 
-## Implementation: 
+## Implementation:
 
 
 ![Algorithm](https://i.imgur.com/5h4VGl8.png)
