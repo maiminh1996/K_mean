@@ -137,11 +137,11 @@ class K_mean():
 
 
 if __name__=='__main__':
-    img = Image.open("tuan.jpg")
+    img = Image.open("dunglan.jpg")
     img = np.array(img)
-    centroids, image = K_mean(img, 6).output()
+    centroids, image = K_mean(img, 2).output()
     a = Image.fromarray(image)
-    a.save("tuan.png")
+    a.save("luu.png")
 
     plt.imshow(image)
     plt.show()
