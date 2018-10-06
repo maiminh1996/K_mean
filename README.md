@@ -25,7 +25,6 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 
 ![Algorithm](https://i.imgur.com/5h4VGl8.png)
 =======
@@ -34,7 +33,3 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 =======
 ![Algorithm]([Imgur](https://i.imgur.com/5h4VGl8.png))
 >>>>>>> 72e5cf1d834997ef7388c82e40baddc2bfc86489
-=======
-
-![Algorithm](https://i.imgur.com/5h4VGl8.png)
->>>>>>> reader_descrip
