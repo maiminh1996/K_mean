@@ -23,13 +23,5 @@ Inspired by [K-mean algorithm and application](https://kipalog.com/posts/Thuat-t
 
 ## Implementation:
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ![Algorithm](https://i.imgur.com/5h4VGl8.png)
-=======
-![Algorithm]([Imgur](https://i.imgur.com/5h4VGl8.png))
->>>>>>> 72e5cf1d834997ef7388c82e40baddc2bfc86489
-=======
-![Algorithm]([Imgur](https://i.imgur.com/5h4VGl8.png))
->>>>>>> 72e5cf1d834997ef7388c82e40baddc2bfc86489
